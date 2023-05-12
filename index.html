@@ -1,0 +1,653 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Modern HTML Email Template</title>
+	<style type="text/css">
+		/* * {
+			border: 1px solid red;
+
+		} */
+
+
+		@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Crimson+Text:wght@600;700&family=Fjalla+One&family=IBM+Plex+Sans&family=Orbitron:wght@600&family=Press+Start+2P&family=Roboto&family=Roboto+Condensed:wght@700&display=swap');
+
+		:root {
+			--Fjalla: 'Fjalla One', sans-serif;
+		}
+
+		body {
+			margin: 0;
+			background-color: #cccccc;
+		}
+
+		table {
+			border-spacing: 0;
+		}
+
+		td {
+			padding: 0;
+		}
+
+		img {
+			border: 0;
+		}
+
+		.wrapper {
+			width: 100%;
+			table-layout: fixed;
+			background-color: #ffffff;
+			padding-bottom: 60px;
+		}
+
+		.main {
+			background-color: #ffffff;
+			margin: 0 auto;
+			width: 100%;
+			max-width: 600px;
+			border-spacing: 0;
+			font-family: 'Fjalla One', sans-serif;
+			color: black;
+		}
+
+		a,
+		a:hover,
+		a:focus {
+			text-decoration: none !important;
+			color: inherit !important;
+		}
+
+		.logo {
+			align-items: center;
+			margin: 0 auto;
+		}
+
+		.catergory {
+			padding: 10px;
+		}
+
+		#offers {
+			color: red;
+		}
+
+		.bold {
+			font-weight: 900;
+			font-size: 24px;
+		}
+
+		.nav {
+			margin-top: 20px;
+		}
+
+		.banner-img {
+			margin-top: 20px;
+			width: 100%;
+			max-width: 600px;
+		}
+
+		.shop {
+			width: 100%;
+			max-width: 560px;
+			margin-top: 20px;
+			color: white;
+			border-collapse: separate;
+			border-spacing: 10px;
+		}
+
+		.shop-buttons {
+			background-color: red;
+		}
+
+		.shop-btn {
+			width: 33.33%;
+			height: 40px;
+			font-weight: 300;
+			text-decoration: none;
+			font-family: var(--Fjalla);
+			font-size: 16px;
+			padding-top: 2px;
+		}
+
+		.him {
+			font-size: 40px;
+			font-weight: 600;
+			margin-top: 30px;
+			margin-bottom: 10px;
+			font-family: 'Fjalla One', sans-serif;
+		}
+
+		.product-img {
+			margin: 0 auto;
+			align-items: center;
+		}
+
+		h3 {
+			text-align: center;
+		}
+
+		p {
+			text-align: center;
+		}
+
+		button {
+			background-color: red;
+			border-color: none;
+			color: white;
+			width: 200px;
+		}
+
+		.all-products {
+			max-width: 560px;
+			overflow-x: auto;
+		}
+
+		.products {
+			max-width: 560px;
+			width: 100%;
+			table-layout: fixed;
+		}
+
+		.products td {
+			word-wrap: break-word;
+			padding: 10px;
+		}
+
+		.product-img {
+			margin: 0 auto;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+		}
+
+		.old-price {
+			font-family: 'Fjalla One', sans-serif;
+			font-size: 14px;
+			color: black;
+			text-decoration: line-through;
+			margin-bottom: 5px;
+		}
+
+		.new-price {
+			font-family: 'Fjalla One', sans-serif;
+			font-size: 18px;
+			color: red;
+		}
+
+		.product-title {
+			font-size: 16px;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			margin-top: 5px;
+			height: 40px;
+		}
+
+		.shop-now-buttons {
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+		}
+
+		.shopnow {
+			max-width: 100%;
+			width: 100%;
+			border: none;
+		}
+
+		@media screen and (max-width: 550px) {
+			.product-title {
+				font-size: 12px;
+			}
+		}
+
+
+		@media screen and (max-width: 480px) {
+			.bold {
+				font-size: 16px;
+			}
+
+			.shop-buttons {
+				font-size: 12px;
+			}
+
+			.him,
+			.her {
+				font-size: 26px;
+			}
+
+			.shopnow {
+				font-size: 12px;
+			}
+
+			.shop-btn {
+				font-size: 14px;
+			}
+
+
+		}
+
+
+		.lifewear {
+			font-size: 16px;
+			font-family: sans-serif;
+			margin-top: 80px;
+			font-weight: bold;
+		}
+
+		.gplay {
+			height: 52px;
+			width: 120px;
+		}
+
+		.apple {
+			height: 38px;
+			width: 150px;
+		}
+
+		.footer {
+			font-family: 'Fjalla One', sans-serif;
+			width: 100%;
+			max-width: 560px;
+		}
+
+		.links-container {
+			display: flex;
+		}
+
+		.links {
+			width: 33.33%;
+			text-align: center;
+		}
+
+		.links2 {
+			width: 50%;
+			text-align: center;
+			text-decoration: underline;
+		}
+
+		.links3 {
+			text-decoration: underline;
+		}
+
+		.end-text {
+			text-align: center;
+			font-family: sans-serif;
+			font-size: 10px;
+			color: grey;
+		}
+
+		.badge-container {
+			display: flex;
+			align-items: center;
+		}
+
+		.apple {
+			height: 40px;
+			width: 120px;
+			padding: 0px;
+
+		}
+
+		.google {
+			height: 60px;
+			width: 146px;
+			padding: 0px;
+		}
+
+		/* footer */
+		@media (max-width: 450px) {
+
+			.footer {
+				max-width: 100% !important;
+			}
+
+			.footer .download {
+				display: block;
+			}
+
+			.download {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.footer .badge-container {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-top: 10px;
+				margin-left: 30px;
+
+			}
+
+			.footer .badge-container img {
+				display: inline-block;
+				margin-right: 10px;
+			}
+
+			.footer .links-container {
+				display: block;
+			}
+
+			.footer .links {
+				display: block;
+				border-top: solid black 1px;
+				background-color: white;
+				color: black;
+				padding: 10px;
+			}
+
+			.footer .links2 {
+				display: block;
+				background-color: white;
+				color: black;
+				padding: 10px;
+			}
+
+			.footer .links3 {
+				display: block;
+				background-color: white;
+				color: black;
+				padding: 10px;
+				text-align: center;
+			}
+
+			.footer .end-text {
+				display: block;
+				border-top: solid black 1px;
+				background-color: white;
+				color: black;
+				padding: 10px;
+				text-align: center;
+			}
+
+			.links {
+				margin: 0 auto;
+				width: 100%;
+			}
+
+			.links2 {
+				margin: 0 auto;
+				width: 100%;
+				border-top: 1px solid black;
+			}
+
+			.links3 {
+				margin: 0 auto;
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<center class="wrapper">
+		<table class="main" width="100%">
+			<!-- LOGO SECTION -->
+			<div class="logo">
+				<a href="https://www.uniqlo.com/uk/en/home"><img src="./img/uniqlo.png" height="66px" alt=""></a>
+			</div>
+
+			<!-- CATERGORIES -->
+			<div class="nav">
+				<tr>
+					<td class="bold" style="text-align: center; color: black;"><a
+							href="https://www.uniqlo.com/uk/en/women">WOMENS</a>
+					</td>
+					<td class="bold" style="text-align: center; color: black;"><a
+							href="https://www.uniqlo.com/uk/en/men">MENS</a>
+					</td>
+					<td class="bold" style="text-align: center; color: black;"><a
+							href="https://www.uniqlo.com/uk/en/kids?utm_campaign=UK_03052023_MARKDOWN&utm_medium=email-news&utm_source=uniqlo">KIDS</a>
+					</td>
+					<td class="bold" style="text-align: center; color: red;" id="offers"><a
+							href="https://www.uniqlo.com/uk/en/women/featured/limited-offers?utm_campaign=UK_03052023_MARKDOWN&utm_medium=email-news&utm_source=uniqlo">OFFERS
+					</td></a>
+				</tr>
+			</div>
+
+
+			<!-- BANNER -->
+
+			<table class="banner" width="100%">
+				<tr>
+					<a
+						href="https://www.uniqlo.com/uk/en/women/featured/limited-offers?utm_campaign=UK_03052023_MARKDOWN&utm_medium=email-news&utm_source=uniqlo"><img
+							class="banner-img" src="./img/imgg.png" width="600px" max-width="100%" alt=""></a>
+				</tr>
+			</table>
+
+			<!-- SHOP -->
+			<table class="shop" width="80%">
+				<tr class="shop-buttons">
+					<td class="shop-btn" style="text-align: center;"><a href="https://www.uniqlo.com/uk/en/women">SHOP
+							WOMEN</a></td>
+					<td class="shop-btn" style="text-align: center;"><a href="https://www.uniqlo.com/uk/en/men">SHOP
+							MEN</a></td>
+					<td class="shop-btn" style="text-align: center;"><a
+							href="https://www.uniqlo.com/uk/en/kids?utm_campaign=UK_03052023_MARKDOWN&utm_medium=email-news&utm_source=uniqlo">SHOP
+							KIDS
+					</td></a>
+				</tr>
+			</table>
+
+
+			<!-- FOR HIM TITLE -->
+
+			<table class="header">
+				<tr>
+					<div class="him">FOR HIM</div>
+				</tr>
+			</table>
+
+
+			<!-- FOR HIM CLOTHING -->
+			<div class="products-container" style="max-width: 100%;">
+				<table class="products" style="width: 100%" ;>
+					<tr>
+						<td class="product">
+							<div class="product-img-container">
+								<a
+									href="https://www.uniqlo.com/uk/en/product/slim-fit-oxford-shirt-456630.html?dwvar_456630_color=COL06&cgid=IDm-all-shirts">
+									<img class="product-img" src="./img/shirt1.webp" alt="Product 1">
+								</a>
+							</div>
+							<h3 class="product-title">SLIM FIT OXFORD SHIRT</h3>
+							<p class="old-price">£34.90</p>
+							<p class="new-price">£39.99</p>
+							<div class="shop-now-buttons">
+								<button class="shopnow">
+									<a
+										href="https://www.uniqlo.com/uk/en/product/slim-fit-oxford-shirt-456630.html?dwvar_456630_color=COL06&cgid=IDm-all-shirts">SHOP
+										NOW</a>
+								</button>
+							</div>
+						</td>
+						<td class="product">
+							<div class="product-img-container">
+								<a
+									href="https://www.uniqlo.com/uk/en/product/extra-fine-cotton-broadcloth-long-sleeve-shirt-456649.html">
+									<img class="product-img" src="./img/shirt2.webp" alt="Product 2">
+								</a>
+							</div>
+							<h3 class="product-title">
+								<a
+									href="https://www.uniqlo.com/uk/en/product/extra-fine-cotton-broadcloth-long-sleeve-shirt-456649.html">EXTRA
+									FINE COTTON BROADCLOTH LONG SLEEVE SHIRT</a>
+							</h3>
+							<p class="old-price">£39.99</p>
+							<p class="new-price">£34.90</p>
+							<div class="shop-now-buttons">
+								<button class="shopnow">
+									<a
+										href="https://www.uniqlo.com/uk/en/product/extra-fine-cotton-broadcloth-long-sleeve-shirt-456649.html">SHOP
+										NOW</a>
+								</button>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+
+			<!-- FOR HER TITLE -->
+
+			<table class="header">
+				<tr>
+					<div class="him">FOR HER</div>
+				</tr>
+			</table>
+
+
+			<!-- FOR HER CLOTHING -->
+			<div class="products-container">
+				<table class="products" width="100%">
+					<tr class="product-row" style="border-collapse: collapse;">
+						<td class="product">
+							<div class="product-img-container">
+								<a
+									href="https://www.uniqlo.com/uk/en/product/linen-blend-gathered-camisole-dress-457464.html?dwvar_457464_color=COL12&cgid=IDw-dresses-jumpsuits">
+									<img class="product-img" src="img/dress1.webp" alt="Product 1"></a>
+							</div>
+							<h3 class="product-title">LINEN BLEND GATHERED CAMISOLE DRESS</h3>
+							<p class="old-price">£49.90</p>
+							<p class="new-price">£39.99</p>
+							<div class="shop-now-buttons">
+								<button class="shopnow"><a
+										href="https://www.uniqlo.com/uk/en/product/linen-blend-gathered-camisole-dress-457464.html?dwvar_457464_color=COL12&cgid=IDw-dresses-jumpsuits">SHOP
+										NOW</button></a>
+							</div>
+						</td>
+						<td class="product">
+							<div class="product-img-container">
+								<a href="https://www.uniqlo.com/uk/en/product/linen-blend-jumpsuit-455669.html">
+									<img class="product-img" src="img/dress2.webp" alt="Product 1"></a>
+							</div>
+							<h3 class="product-title">LINEN BLEND JUMPSUIT</h3>
+							<p class="old-price">£49.90</p>
+							<p class="new-price">£39.90</p>
+							<div class="shop-now-buttons">
+								<button class="shopnow"><a
+										href="https://www.uniqlo.com/uk/en/product/linen-blend-jumpsuit-455669.html">SHOP
+										NOW</button></a>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+
+
+			<p class="lifewear">LifeWear: Simple made better</p>
+
+			<!-- FOOTER SECTION -->
+
+			<table class="footer" width="100%" cellspacing="0" cellpadding="0"
+				style="border: 1px solid black; background-color: black; color: white; width: 100%; max-width: 600px;">
+				<tr class="download">
+					<td style="text-align: center; width: 50%;">
+						Download the app
+					</td>
+					<td style="width: 50%; justify-content: center; align-items: center;">
+						<div class="badge-container">
+							<a href="https://apps.apple.com/gb/app/uniqlo-uk/id1477798262"><img src="./img/apple.png"
+									alt="" class="apple"></a>
+							<a
+								href="https://play.google.com/store/apps/details?id=com.uniqlo.uk2.catalogue&hl=en_GB&gl=US"><img
+									src="./img/google-play-badge.png" alt="" class="google"></a>
+						</div>
+					</td>
+
+				</tr>
+			</table>
+			<table class="footer">
+				<tr>
+					<td colspan="4" style="text-align: center; padding: 10px;">
+						Follow us
+						<a href="https://www.instagram.com/uniqlo">
+							<img src="./img/insta.png" style="height: 38px; width: 38px;" alt="">
+						</a>
+						<a href="https://www.tiktok.com/@uniqlo">
+							<img src="./img/icons8-tiktok-500.png" style="height: 40px; width: 40px;" alt="">
+						</a>
+						<a href="https://www.facebook.com/uniqlo">
+							<img src="./img/icons8-facebook-500.png" style="height: 40px; width: 40px;" alt="">
+						</a>
+						<a href="https://www.pinterest.com/uniqlo">
+							<img src="./img/pinterest-square-icon.png" style="height: 36px; width: 36px;" alt="">
+						</a>
+					</td>
+
+				</tr>
+				<tr class="links-container" style="border-top: solid black 1px;">
+					<td class="links" style="background-color: white; color: black; padding: 10px;">
+						<a
+							href="https://www.uniqlo.com/uk/en/contactus?utm_campaign=UK_06052023_ULD-EFM-LC&utm_medium=email-news&utm_source=uniqlo">Contact
+							Us
+					</td></a>
+					<td class="links" style="background-color: white; color: black; padding: 10px;">
+						<a
+							href="https://www.fastretailing.com/employment/en/?utm_campaign=UK_06052023_ULD-EFM-LC&utm_medium=email-news&utm_source=uniqlo">Careers
+					</td></a>
+					<td class="links" style="background-color: white; color: black; padding: 10px;">
+						Private Policy
+					</td>
+				</tr>
+				<tr class="links-container" style="border-top: solid black 1px;">
+					<td class="links2" style="background-color: white; color: black; padding: 10px;">
+						<a
+							href="https://euenews.uniqlo.com/webApp/preferenceCentre?id=%40Ylw4f1IYM%2F%2FM%2FK1KEWI30g%3D%3D">Update
+							my preferences</a>
+					</td>
+					<td class="links2" style="background-color: white; color: black; padding: 10px;">
+						<a
+							href="https://euenews.uniqlo.com/webApp/unsubscribe?id=%40Ylw4f1IYM%2F%2FM%2FK1KEWI30g%3D%3D">Unsubscribe</a>
+					</td>
+				</tr>
+				<tr style="border-top: solid black 1px;">
+					<td class="links3" colspan="4"
+						style="background-color: white; color: black; padding: 10px; text-align: center;">
+						<a
+							href="https://m.euenews.uniqlo.com/nl/jsp/m.jsp?c=%40v1qsqHGVjnSIjclktIXb6aMGZF50eG6OK5RwG9GbWrE%3D">View
+							this email in your browser</a>
+					</td>
+				</tr>
+				<tr class="end" style="border-top: solid black 1px;">
+					<td class="end-text">
+						©UNIQLO CO. LTD. All rights reserved.
+						<br><br>
+
+						This email is sent by UNIQLO EUROPE LTD, a company registered in England and Wales (number
+						4845064),
+						and whose registered address is at 103-113 Regent Street, London, W1B 4HL.
+					</td>
+				</tr>
+			</table>
+
+
+		</table>
+	</center>
+</body>
+
+</html>
+
+
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+	crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+	crossorigin="anonymous"></script>
